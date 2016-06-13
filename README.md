@@ -1,2 +1,2 @@
 # gophuck
-Brainfuck parser written in Go
+Brainfuck interpreter written in Go
