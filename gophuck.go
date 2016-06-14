@@ -39,12 +39,6 @@ type interpreter struct {
 	insts []Command
 }
 
-type loop struct {
-	last                       *loop
-	next                       *loop
-	matchingBegin, matchingEnd int
-}
-
 func (i interpreter) Interpret() {
 	for i.pos < len(i.insts) {
 		c := i.insts[i.pos]
